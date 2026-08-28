@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "map_name": "SIH_Smart_Warehouse_Grid_V1",
+    "version": "1.0",
+    "dimensions_meters": { "width": 50.0, "height": 30.0 }
+  },
+  "nodes": [
+    { "id": "N_01", "x": 5.0,  "y": 5.0,  "type": "charging_station" },
+    { "id": "N_02", "x": 5.0,  "y": 15.0, "type": "charging_station" },
+    { "id": "N_03", "x": 5.0,  "y": 25.0, "type": "charging_station" },
+    { "id": "N_04", "x": 15.0, "y": 5.0,  "type": "intersection" },
+    { "id": "N_05", "x": 15.0, "y": 15.0, "type": "intersection" },
+    { "id": "N_06", "x": 15.0, "y": 25.0, "type": "intersection" },
+    { "id": "N_07", "x": 25.0, "y": 5.0,  "type": "storage_bay" },
+    { "id": "N_08", "x": 25.0, "y": 15.0, "type": "narrow_chokepoint" },
+    { "id": "N_09", "x": 25.0, "y": 25.0, "type": "storage_bay" },
+    { "id": "N_10", "x": 35.0, "y": 5.0,  "type": "intersection" },
+    { "id": "N_11", "x": 35.0, "y": 15.0, "type": "intersection" },
+    { "id": "N_12", "x": 35.0, "y": 25.0, "type": "intersection" },
+    { "id": "N_13", "x": 45.0, "y": 5.0,  "type": "dropoff_dock" },
+    { "id": "N_14", "x": 45.0, "y": 15.0, "type": "dropoff_dock" },
+    { "id": "N_15", "x": 45.0, "y": 25.0, "type": "dropoff_dock" }
+  ],
+  "edges": [
+    { "from": "N_01", "to": "N_04", "weight": 10.0, "bidirectional": true },
+    { "from": "N_02", "to": "N_05", "weight": 10.0, "bidirectional": true },
+    { "from": "N_03", "to": "N_06", "weight": 10.0, "bidirectional": true },
+    { "from": "N_04", "to": "N_05", "weight": 10.0, "bidirectional": true },
+    { "from": "N_05", "to": "N_06", "weight": 10.0, "bidirectional": true },
+    { "from": "N_04", "to": "N_07", "weight": 10.0, "bidirectional": true },
+    { "from": "N_05", "to": "N_08", "weight": 10.0, "bidirectional": true },
+    { "from": "N_06", "to": "N_09", "weight": 10.0, "bidirectional": true },
+    { "from": "N_07", "to": "N_10", "weight": 10.0, "bidirectional": true },
+    { "from": "N_08", "to": "N_11", "weight": 10.0, "bidirectional": true },
+    { "from": "N_09", "to": "N_12", "weight": 10.0, "bidirectional": true },
+    { "from": "N_10", "to": "N_11", "weight": 10.0, "bidirectional": true },
+    { "from": "N_11", "to": "N_12", "weight": 10.0, "bidirectional": true },
+    { "from": "N_10", "to": "N_13", "weight": 10.0, "bidirectional": true },
+    { "from": "N_11", "to": "N_14", "weight": 10.0, "bidirectional": true },
+    { "from": "N_12", "to": "N_15", "weight": 10.0, "bidirectional": true }
+  ]
+}
